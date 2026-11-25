@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohana Beach Resorts, Mandarmani | Book Direct</title>
+<meta name="description" content="Book direct at Mohana Beach Resorts, Mandarmani: sea-facing rooms and villas, pool, restaurant and beach access. Zero commission.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{sand:'#FAF8F5',navy:'#0F2942',gold:'#D97706'},fontFamily:{sans:['"Plus Jakarta Sans"','system-ui','sans-serif'],serif:['"Playfair Display"','Georgia','serif']}}}};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<style>
+body{background:#FAF8F5;color:#0F2942;padding-bottom:calc(5rem + env(safe-area-inset-bottom,0px))}
+@media(min-width:768px){body{padding-bottom:0}}
+img{background:#E8E1D6}
+:focus-visible{outline:3px solid #D97706;outline-offset:2px}
+.field{width:100%;border:1px solid #E5DDD0;border-radius:.75rem;padding:.8rem .9rem;background:#fff;color:#0F2942;font-weight:500}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:#D97706;color:#fff;font-weight:700;border-radius:9999px;transition:background .2s}
+.btn:hover{background:#B45F04}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<header class="sticky top-0 z-40 bg-sand/90 backdrop-blur border-b border-navy/10">
+  <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-3" aria-label="Main">
+    <a href="#top" class="flex items-center gap-2 font-serif font-bold text-lg whitespace-nowrap"><i data-lucide="waves" class="w-6 h-6 text-gold shrink-0"></i>Mohana Beach Resorts</a>
+    <ul class="hidden md:flex items-center gap-8 text-sm font-semibold">
+      <li><a class="hover:text-gold" href="#rooms">Rooms</a></li><li><a class="hover:text-gold" href="#amenities">Amenities</a></li>
+      <li><a class="hover:text-gold" href="#gallery">Gallery</a></li><li><a class="hover:text-gold" href="#location">Location</a></li>
+    </ul>
+    <div class="flex items-center gap-2">
+      <a href="#book" class="btn text-sm px-5 py-2.5">Book Now</a>
+      <button id="menuBtn" class="md:hidden p-2 -mr-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+  </nav>
+  <ul id="mobileMenu" class="hidden md:hidden border-t border-navy/10 bg-sand px-5 py-3 font-semibold">
+    <li><a class="block py-3" href="#rooms">Rooms</a></li><li><a class="block py-3" href="#amenities">Amenities</a></li>
+    <li><a class="block py-3" href="#gallery">Gallery</a></li><li><a class="block py-3" href="#location">Location</a></li>
+  </ul>
+</header>
+
+<main id="top">
+<section class="relative">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80" alt="Turquoise sea meeting a white sand beach" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high">
+  <div class="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/35 to-navy/85"></div>
+  <div class="relative max-w-6xl mx-auto px-5 pt-20 pb-32 md:pt-32 md:pb-44 text-white">
+    <p class="inline-flex items-center gap-2 text-sm font-semibold bg-white/15 backdrop-blur rounded-full px-4 py-1.5"><i data-lucide="map-pin" class="w-4 h-4"></i>Mandarmani, West Bengal</p>
+    <h1 class="mt-5 font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] max-w-3xl">Wake Up to the Sound of Waves — Direct Beachfront Stays</h1>
+    <p class="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">Book directly with us: zero commission, our lowest rates, and a reply from the resort team on WhatsApp within minutes.</p>
+  </div>
+</section>
+
+<section id="book" class="relative -mt-20 px-5 scroll-mt-20">
+  <form id="quickForm" class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl shadow-navy/10 p-5 md:p-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5 lg:items-end" novalidate>
+    <div><label for="checkin" class="block text-sm font-semibold mb-1.5">Check-in</label><input id="checkin" type="date" class="field"></div>
+    <div><label for="checkout" class="block text-sm font-semibold mb-1.5">Check-out</label><input id="checkout" type="date" class="field"></div>
+    <div><label for="guests" class="block text-sm font-semibold mb-1.5">Guests</label><select id="guests" class="field"></select></div>
+    <div><label for="room" class="block text-sm font-semibold mb-1.5">Room</label><select id="room" class="field"><option value="">Any room</option></select></div>
+    <button type="submit" class="btn px-4 py-3.5 sm:col-span-2 lg:col-span-1"><i data-lucide="message-circle" class="w-5 h-5 shrink-0"></i>Check on WhatsApp</button>
+    <p id="formMsg" class="sm:col-span-2 lg:col-span-5 text-sm font-semibold text-red-700 hidden" role="alert"></p>
+  </form>
+</section>
+
+<section id="rooms" class="max-w-6xl mx-auto px-5 py-20 md:py-28 scroll-mt-16">
+  <h2 class="font-serif text-3xl md:text-4xl font-bold">Rooms and tariff</h2>
+  <p class="mt-3 text-navy/70 max-w-xl text-lg">Per-night rates for the room, breakfast included. Message us to confirm your dates.</p>
+  <div id="roomGrid" class="mt-12 grid gap-8 md:grid-cols-3"></div>
+</section>
+
+<section id="amenities" class="bg-white py-20 md:py-28 scroll-mt-16">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="font-serif text-3xl md:text-4xl font-bold">Everything for an easy stay</h2>
+    <div id="amenityGrid" class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </div>
+</section>
+
+<section id="gallery" class="max-w-6xl mx-auto px-5 py-20 md:py-28 scroll-mt-16">
+  <h2 class="font-serif text-3xl md:text-4xl font-bold">Life at the resort</h2>
+  <div id="galleryGrid" class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"></div>
+</section>
+
+<section class="bg-navy text-white py-20 md:py-28">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="font-serif text-3xl md:text-4xl font-bold">What our guests say</h2>
+    <div id="reviewGrid" class="mt-12 grid gap-6 md:grid-cols-3"></div>
+  </div>
+</section>
+
+<section id="location" class="max-w-6xl mx-auto px-5 py-20 md:py-28 scroll-mt-16">
+  <h2 class="font-serif text-3xl md:text-4xl font-bold">Find us on Mandarmani beach</h2>
+  <div class="mt-10 grid gap-8 lg:grid-cols-5">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="flex gap-4"><i data-lucide="map-pin" class="w-6 h-6 text-gold shrink-0 mt-1"></i><address class="not-italic leading-relaxed">Mohana Beach Resorts<br>Mandarmani Sea Beach Road<br>Mandarmani, Purba Medinipur<br>West Bengal 721423, India</address></div>
+      <div class="flex gap-4"><i data-lucide="phone" class="w-6 h-6 text-gold shrink-0 mt-1"></i><a href="tel:+919932424383" class="font-semibold hover:text-gold">+91 99324 24383</a></div>
+      <div class="flex gap-4"><i data-lucide="clock" class="w-6 h-6 text-gold shrink-0 mt-1"></i><p>Check-in from 1:00 PM<br>Check-out by 11:00 AM</p></div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Mohana+Beach+Resorts+Mandarmani" target="_blank" rel="noopener" class="btn bg-navy hover:bg-navy/90 px-6 py-3" style="background:#0F2942">Get directions <i data-lucide="navigation" class="w-4 h-4"></i></a>
+    </div>
+    <div class="lg:col-span-3 rounded-2xl overflow-hidden shadow-lg shadow-navy/10 bg-white">
+      <iframe title="Map of Mohana Beach Resorts, Mandarmani" src="https://www.google.com/maps?q=Mohana+Beach+Resorts+Mandarmani&output=embed" class="w-full h-80 md:h-[420px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-navy text-white/80">
+  <div class="max-w-6xl mx-auto px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
+    <div><p class="flex items-center gap-2 text-white font-serif font-bold text-lg"><i data-lucide="waves" class="w-6 h-6 text-gold"></i>Mohana Beach Resorts</p><p class="mt-3 leading-relaxed">Direct beachfront stays with no middlemen and no booking fees.</p></div>
+    <ul class="space-y-2 font-medium"><li><a class="hover:text-white" href="#rooms">Rooms</a></li><li><a class="hover:text-white" href="#amenities">Amenities</a></li><li><a class="hover:text-white" href="#gallery">Gallery</a></li><li><a class="hover:text-white" href="#location">Location</a></li></ul>
+    <div class="space-y-2"><p><a class="hover:text-white" href="tel:+919932424383">+91 99324 24383</a></p><p>Mandarmani Sea Beach Road, West Bengal 721423</p></div>
+  </div>
+  <p class="border-t border-white/10 text-center text-xs py-5">© <span id="year"></span> Mohana Beach Resorts. All rights reserved.</p>
+</footer>
+
+<div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-navy/10 shadow-[0_-4px_20px_rgba(15,41,66,.12)] p-3 pb-[max(.75rem,env(safe-area-inset-bottom))] grid grid-cols-[1fr_1.45fr] gap-2.5">
+  <a href="tel:+919932424383" class="flex items-center justify-center gap-1.5 border-2 border-navy text-navy font-bold text-[15px] leading-none whitespace-nowrap rounded-xl h-12 px-2"><i data-lucide="phone" class="w-[18px] h-[18px] shrink-0"></i><span>Call Now</span></a>
+  <button type="button" id="stickyWa" class="flex items-center justify-center gap-1.5 bg-gold text-white font-bold text-[15px] leading-none whitespace-nowrap rounded-xl h-12 px-2"><i data-lucide="message-circle" class="w-[18px] h-[18px] shrink-0"></i><span>Book on WhatsApp</span></button>
+</div>
+
+<script>
+(function(){
+var WA='919932424383', HOTEL='Mohana Beach Resorts';
+var U=function(id,w){return 'https://images.unsplash.com/photo-'+id+'?auto=format&fit=crop&w='+w+'&q=75'};
+var perks=[['snowflake','AC'],['wifi','Wi-Fi'],['coffee','Breakfast Included'],['door-open','Balcony']];
+var rooms=[
+ {n:'Deluxe Garden View Room',p:2999,d:'A calm room overlooking our gardens, a short walk from the sand.',i:'1631049307264',a:'Bright double room with white linen'},
+ {n:'Premium Sea-Facing Room',p:4499,d:'Open the balcony door and watch the tide roll in from bed.',i:'1582719508461',a:'Elegant room with a large bed and sea-facing windows'},
+ {n:'Luxury Beachfront Villa',p:6999,d:'Our finest address: a private villa just steps from the shore.',i:'1540541338287',a:'Beachfront villa with pool and sun loungers'}];
+var amen=[['umbrella','Private Beach Access','Walk straight onto the beach right from the resort.'],['waves-ladder','Swimming Pool','A clean open-air pool with loungers and shaded seating.'],['utensils','Multi-Cuisine Restaurant','Fresh seafood, Indian dishes and kids\u2019 favourites.'],['car','Free Parking','Secure on-site parking for cars and larger vehicles.'],['zap','24/7 Power Backup','Lights, AC and Wi-Fi keep running through any outage.'],['flame','Bonfire & BBQ','Evening bonfires and grills, arranged on request.']];
+var gal=[['1520250497591','Resort pool framed by palm trees','md:col-span-2'],['1573843981267','Tropical beach with clear water',''],['1566073771259','Resort pool at golden hour',''],['1414235077428','Plated dinner at the resort restaurant',''],['1571896349842','Beachfront resort seen from the water','col-span-2 md:col-span-1'],['1551882547','Resort exterior lit up at dusk','col-span-2']];
+var revs=[['Ananya & Rohan Mehta','Couple, Pune','We booked the sea-facing room for our anniversary. The sunrise from the balcony was unreal, and the staff arranged a lovely beach dinner.'],['The Nair Family','Family of five, Bengaluru','Travelling with kids and parents is stressful, but the villa gave everyone space. The pool was spotless and the restaurant cooked mild dishes for the children.'],['Priya & Karan Shah','Couple, Mumbai','Booking on WhatsApp took two minutes and the price beat every travel site. A power cut one evening and we never noticed. We are already planning our next trip.']];
+var $=function(id){return document.getElementById(id)};
+var stars=new Array(6).join('<i data-lucide="star" class="w-5 h-5 fill-current"></i>');
+
+$('roomGrid').innerHTML=rooms.map(function(r){return '<article class="reveal bg-white rounded-2xl overflow-hidden shadow-lg shadow-navy/5 flex flex-col"><img src="'+U(r.i,900)+'" alt="'+r.a+'" class="h-56 w-full object-cover" loading="lazy"><div class="p-6 flex flex-col flex-1"><h3 class="font-serif text-xl font-bold">'+r.n+'</h3><p class="mt-1 text-navy/70">'+r.d+'</p><ul class="mt-4 flex flex-wrap gap-2 text-sm font-medium">'+perks.map(function(k){return '<li class="flex items-center gap-1.5 bg-sand rounded-full px-3 py-1"><i data-lucide="'+k[0]+'" class="w-4 h-4 text-gold"></i>'+k[1]+'</li>'}).join('')+'</ul><div class="mt-auto pt-6 flex items-end justify-between gap-3"><p><span class="text-2xl font-extrabold">\u20B9'+r.p.toLocaleString('en-IN')+'</span><span class="text-navy/60 text-sm"> / night</span></p><button type="button" class="book-room btn px-5 py-2.5" data-room="'+r.n+'">Book This Room</button></div></div></article>'}).join('');
+$('amenityGrid').innerHTML=amen.map(function(a){return '<div class="reveal bg-sand rounded-2xl p-6"><i data-lucide="'+a[0]+'" class="w-8 h-8 text-gold"></i><h3 class="mt-4 text-lg font-bold">'+a[1].replace('&','&amp;')+'</h3><p class="mt-1 text-navy/70">'+a[2]+'</p></div>'}).join('');
+$('galleryGrid').innerHTML=gal.map(function(g){return '<img src="'+U(g[0],800)+'" alt="'+g[1]+'" class="reveal rounded-2xl w-full h-48 md:h-64 object-cover '+g[2]+'" loading="lazy">'}).join('');
+$('reviewGrid').innerHTML=revs.map(function(r){return '<figure class="reveal bg-white/10 rounded-2xl p-6"><div class="flex gap-1 text-gold" role="img" aria-label="5 out of 5 stars">'+stars+'</div><blockquote class="mt-4 leading-relaxed text-white/90">'+r[2]+'</blockquote><figcaption class="mt-5 font-bold">'+r[0].replace('&','&amp;')+'<span class="block text-sm font-normal text-white/60">'+r[1]+'</span></figcaption></figure>'}).join('');
+rooms.forEach(function(r){$('room').add(new Option(r.n+' (\u20B9'+r.p.toLocaleString('en-IN')+')',r.n))});
+for(var g=1;g<=8;g++)$('guests').add(new Option(g+(g===1?' guest':' guests'),g,false,g===2));
+
+var ci=$('checkin'),co=$('checkout'),msg=$('formMsg');
+function iso(d){var m=d.getMonth()+1,day=d.getDate();return d.getFullYear()+'-'+(m<10?'0':'')+m+'-'+(day<10?'0':'')+day}
+function parse(v){var p=v.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
+function pretty(v){return parse(v).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}
+var t=new Date(),n=new Date(t);n.setDate(t.getDate()+1);
+ci.min=iso(t);co.min=iso(n);$('year').textContent=t.getFullYear();
+ci.addEventListener('change',function(){if(!ci.value)return;var d=parse(ci.value);d.setDate(d.getDate()+1);co.min=iso(d);if(co.value&&co.value<=ci.value)co.value=iso(d)});
+function err(m,el){msg.textContent=m;msg.classList.remove('hidden');$('book').scrollIntoView({behavior:'smooth'});if(el)el.focus()}
+
+function send(room,strict){
+ var a=ci.value,b=co.value;
+ if(strict||a||b){
+  if(!a||!b)return err('Please choose both check-in and check-out dates.',a?co:ci);
+  if(b<=a)return err('Check-out must be after check-in.',co);
+ }
+ msg.classList.add('hidden');
+ var nights=a&&b?Math.round((parse(b)-parse(a))/864e5):0,gc=+$('guests').value;
+ var text='Hi '+HOTEL+', I want to book '+(room||'a room')+(a&&b?' from '+pretty(a)+' to '+pretty(b)+' ('+nights+(nights===1?' night':' nights')+')':'')+' for '+gc+(gc===1?' guest':' guests')+'. Please share availability.';
+ window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(text),'_blank','noopener');
+}
+$('quickForm').addEventListener('submit',function(e){e.preventDefault();send($('room').value,true)});
+document.querySelectorAll('.book-room').forEach(function(btn){btn.addEventListener('click',function(){$('room').value=btn.dataset.room;send(btn.dataset.room,false)})});
+$('stickyWa').addEventListener('click',function(){send($('room').value,false)});
+
+var mb=$('menuBtn'),mm=$('mobileMenu');
+mb.addEventListener('click',function(){var o=mm.classList.toggle('hidden')===false;mb.setAttribute('aria-expanded',o)});
+mm.addEventListener('click',function(e){if(e.target.tagName==='A'){mm.classList.add('hidden');mb.setAttribute('aria-expanded','false')}});
+
+var PH='data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><rect width="800" height="600" fill="#0F2942"/><g fill="none" stroke="#D97706" stroke-width="10" stroke-linecap="round"><path d="M330 250q17-18 35 0t35 0 35 0 35 0"/><path d="M330 290q17-18 35 0t35 0 35 0 35 0"/><path d="M330 330q17-18 35 0t35 0 35 0 35 0"/></g><text x="400" y="400" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" font-weight="700" fill="#FAF8F5">'+HOTEL+'</text></svg>');
+function fb(i){if(i.dataset.fb)return;i.dataset.fb='1';i.src=PH}
+document.querySelectorAll('img').forEach(function(i){i.addEventListener('error',function(){fb(i)});if(i.complete&&i.naturalWidth===0&&i.getAttribute('src'))fb(i)});
+
+var els=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)})}else els.forEach(function(e){e.classList.add('in')});
+if(window.lucide)lucide.createIcons();
+})();
+</script>
+</body>
+</html>
